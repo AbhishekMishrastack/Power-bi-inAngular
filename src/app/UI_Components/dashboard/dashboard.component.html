@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Dashboard</title>
+    
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Top Header -->
+        <div class="top-header">
+            <div class="top-header-left">
+                <h1>Executive View</h1>
+                <p>Drive Sales Fundamentals Stronger, Faster & Better</p>
+            </div>
+            <div class="top-header-right">
+                <div class="completion-circle">100.0%</div>
+            </div>
+        </div>
+
+        <!-- Main Header with Filters -->
+         <div class="main-header">
+        <!-- First Filter Row -->
+        <div class="filter-section">
+            <div style="display: flex; gap: 15px; flex: 1;">
+                <div class="filter-item">
+                    <div class="filter-label">Country</div>
+                    <select class="filter-select">
+                        <option>Middle East</option>
+                        <option>Asia</option>
+                        <option>Europe</option>
+                        <option>North America</option>
+                        <option>South America</option>
+                        <option>Africa</option>
+                        <option>Australia</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <div class="filter-label">Month & Year</div>
+                    <select class="filter-select">
+                        <option>All</option>
+                        <option>January 2025</option>
+                        <option>February 2025</option>
+                        <option>March 2025</option>
+                        <option>April 2025</option>
+                        <option>May 2025</option>
+                        <option>June 2025</option>
+                        <option>July 2025</option>
+                        <option>August 2025</option>
+                        <option>September 2025</option>
+                        <option>October 2025</option>
+                        <option>November 2025</option>
+                        <option>December 2025</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <div class="filter-label">Year</div>
+                    <select class="filter-select">
+                        <option>2025</option>
+                        <option>2024</option>
+                        <option>2023</option>
+                        <option>2022</option>
+                        <option>2021</option>
+                    </select>
+                </div>
+            </div>
+            <div class="currency-buttons">
+                <button class="currency-btn active">QAR</button>
+                <button class="currency-btn">USD</button>
+            </div>
+            <div class="last-refresh">
+                <div class="last-refresh-label">Last Refresh</div>
+                <div class="last-refresh-time">13 Dec 2025 07:11 AM</div>
+            </div>
+        </div>
+
+        <!-- Distributor Tab Section -->
+        <div class="tab-section">
+            <button class="tab-button">Distributor</button>
+            <select class="tab-select">
+                <option>Distributor: All</option>
+                <option>Distributor: Delmond</option>
+                <option>Distributor: Consumer</option>
+                <option>Distributor: MOON MARK</option>
+                <option>Distributor: Chickwell</option>
+            </select>
+            <select class="tab-select">
+                <option>Line of Business: All</option>
+                <option>Line of Business: General Goods</option>
+                <option>Line of Business: Biscuits</option>
+                <option>Line of Business: Rasbury</option>
+                <option>Line of Business: Cheese</option>
+            </select>
+            <select class="tab-select">
+                <option>Supplier: All</option>
+                <option>Supplier: Supplier A</option>
+                <option>Supplier: Supplier B</option>
+                <option>Supplier: Supplier C</option>
+            </select>
+            <select class="tab-select">
+                <option>Agency: All</option>
+                <option>Agency: Agency A</option>
+                <option>Agency: Agency B</option>
+                <option>Agency: Agency C</option>
+            </select>
+            <select class="tab-select">
+                <option>Category: All</option>
+                <option>Category: Food & Beverage</option>
+                <option>Category: Grocery</option>
+                <option>Category: Dairy</option>
+            </select>
+        </div>
+
+        <!-- Second Row of Tabs -->
+        <div class="tab-section">
+            <select class="tab-select">
+                <option>Segment: All</option>
+                <option>Segment: Premium</option>
+                <option>Segment: Standard</option>
+                <option>Segment: Economy</option>
+            </select>
+            <select class="tab-select">
+                <option>Brand: All</option>
+                <option>Brand: Brand A</option>
+                <option>Brand: Brand B</option>
+                <option>Brand: Brand C</option>
+                <option>Brand: Brand D</option>
+                <option>Brand: Brand E</option>
+            </select>
+            <select class="tab-select">
+                <option>Sub Brand: All</option>
+                <option>Sub Brand: Sub Brand A</option>
+                <option>Sub Brand: Sub Brand B</option>
+                <option>Sub Brand: Sub Brand C</option>
+            </select>
+            <select class="tab-select">
+                <option>Promotion: All</option>
+                <option>Promotion: Summer Sale</option>
+                <option>Promotion: Winter Discount</option>
+                <option>Promotion: Clearance</option>
+            </select>
+            <select class="tab-select">
+                <option>SKU: All</option>
+                <option>SKU: SKU-001</option>
+                <option>SKU: SKU-002</option>
+                <option>SKU: SKU-003</option>
+            </select>
+        </div>
+
+        <!-- Retailer Tab Section -->
+        <div class="tab-section retailer">
+            <button class="tab-button">Retailer</button>
+            <select class="tab-select">
+                <option>Retailer Group: All</option>
+                <option>Retailer Group: Group A</option>
+                <option>Retailer Group: Group B</option>
+                <option>Retailer Group: Group C</option>
+            </select>
+            <select class="tab-select">
+                <option>Retailer Subgroup: All</option>
+                <option>Retailer Subgroup: Subgroup A</option>
+                <option>Retailer Subgroup: Subgroup B</option>
+            </select>
+            <select class="tab-select">
+                <option>Store: All</option>
+                <option>Store: Store 1</option>
+                <option>Store: Store 2</option>
+                <option>Store: Store 3</option>
+            </select>
+            <select class="tab-select">
+                <option>Channel: All</option>
+                <option>Channel: Online</option>
+                <option>Channel: Retail</option>
+                <option>Channel: Wholesale</option>
+            </select>
+            <select class="tab-select">
+                <option>Sub Channel: All</option>
+                <option>Sub Channel: E-commerce</option>
+                <option>Sub Channel: Store Front</option>
+            </select>
+            <select class="tab-select">
+                <option>City: All</option>
+                <option>City: Doha</option>
+                <option>City: Dubai</option>
+                <option>City: Riyadh</option>
+            </select>
+            <select class="tab-select">
+                <option>Area: All</option>
+                <option>Area: North</option>
+                <option>Area: South</option>
+                <option>Area: East</option>
+                <option>Area: West</option>
+            </select>
+            <select class="tab-select">
+                <option>Salesmen: All</option>
+                <option>Salesmen: John Doe</option>
+                <option>Salesmen: Jane Smith</option>
+                <option>Salesmen: Mike Johnson</option>
+            </select>
+            <button class="reset-btn">Reset</button>
+        </div>
+    </div>
+
+        <!-- Main Content Area -->
+        <div class="content-wrapper">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <button class="sidebar-item active">Executive</button>
+                <button class="sidebar-item">Sales</button>
+                <button class="sidebar-item">Sales Trend</button>
+                <button class="sidebar-item">Daily Sales</button>
+                <button class="sidebar-item">Retailer vs LOB</button>
+                <button class="sidebar-item">Forecast vs Budget</button>
+                <button class="sidebar-item">Coverage</button>
+                <button class="sidebar-item">Coverage Trend</button>
+                <button class="sidebar-item">Active Stores</button>
+                <button class="sidebar-item">MSL & Listing</button>
+                <button class="sidebar-item">Stock</button>
+                <button class="sidebar-item">Ageing</button>
+                <button class="sidebar-item">Near Expiry</button>
+                <button class="sidebar-item">Out of Stock</button>
+            </div>
+
+            <!-- Main Content -->
+            <div class="main-content">
+                <!-- Metric Cards -->
+                <div class="metric-row">
+                    <!-- Sales Card -->
+                    <div class="metric-card">
+                        <div class="card-title sales">Sales</div>
+                        <div class="metrics-header">
+                            <span>Value (Mn)</span>
+                            <span>Volume (Tons)</span>
+                            <span>MSU</span>
+                        </div>
+                        <div class="metrics-values">
+                            <div class="metric-value-item">
+                                <div class="metric-main">24.5M</div>
+                                <div class="metric-sub">10.4M +14.1M</div>
+                                <div class="metric-change positive">135.1%</div>
+                            </div>
+                            <div class="metric-value-item">
+                                <div class="metric-main">1005.0</div>
+                                <div class="metric-sub">276.2 +728.8</div>
+                                <div class="metric-change positive">263.9%</div>
+                            </div>
+                            <div class="metric-value-item">
+                                <div class="metric-main">137.4</div>
+                                <div class="metric-sub">60.7 +76.7</div>
+                                <div class="metric-change positive">126.5%</div>
+                            </div>
+                        </div>
+                        <div class="chart-container">
+                            <div class="chart-legend">
+                                <div class="legend-item">
+                                    <div class="legend-line current"></div>
+                                    <span>Current Year</span>
+                                </div>
+                                <div class="legend-item">
+                                    <div class="legend-line previous"></div>
+                                    <span>Previous Year</span>
+                                </div>
+                            </div>
+                            <svg width="100%" height="90" viewBox="0 0 400 90">
+                                <!-- Current Year Line (Teal) -->
+                                <polyline points="10,70 70,55 130,45 190,35 250,50 310,30 370,25" 
+                                    fill="none" stroke="#14b8a6" stroke-width="2"/>
+                                <!-- Previous Year Line (Pink) -->
+                                <polyline points="10,75 70,70 130,65 190,60 250,68 310,55 370,50" 
+                                    fill="none" stroke="#be185d" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Coverage Card -->
+                    <div class="metric-card">
+                        <div class="card-title coverage">Coverage</div>
+                        <div class="metrics-header coverage-bg">
+                            <span>Active Stores</span>
+                            <span>Productive Calls</span>
+                            <span>Lines Per Store</span>
+                        </div>
+                        <div class="metrics-values">
+                            <div class="metric-value-item">
+                                <div class="metric-main">985</div>
+                                <div class="metric-sub">1076 -91</div>
+                                <div class="metric-change negative">-8.5%</div>
+                            </div>
+                            <div class="metric-value-item">
+                                <div class="metric-main">6,275</div>
+                                <div class="metric-sub">5,160 +1,115</div>
+                                <div class="metric-change positive">21.6%</div>
+                            </div>
+                            <div class="metric-value-item">
+                                <div class="metric-main">27</div>
+                                <div class="metric-sub">15 +12</div>
+                                <div class="metric-change positive">80.1%</div>
+                            </div>
+                        </div>
+                        <div class="coverage-percentages">
+                            <div>
+                                <div class="percentage-item">69.9%</div>
+                                <div class="percentage-label">MSL %</div>
+                            </div>
+                            <div>
+                                <div class="percentage-item">87.6%</div>
+                                <div class="percentage-label">Listing %</div>
+                            </div>
+                        </div>
+                        <div class="chart-container">
+                            <svg width="100%" height="90" viewBox="0 0 400 90">
+                                <polyline points="10,65 70,50 130,40 190,35 250,45 310,30 370,20" 
+                                    fill="none" stroke="#3b82f6" stroke-width="2"/>
+                                <polyline points="10,70 70,65 130,60 190,55 250,62 310,50 370,45" 
+                                    fill="none" stroke="#be185d" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Stock Card -->
+                    <div class="metric-card">
+                        <div class="card-title stock">Stock</div>
+                        <div class="metrics-header stock-bg">
+                            <span>Stock Value</span>
+                            <span>Ageing</span>
+                            <span>Near Expiry</span>
+                        </div>
+                        <div class="metrics-values">
+                            <div class="metric-value-item">
+                                <div class="metric-main">16.1M</div>
+                                <div class="metric-sub">15.0M +1.2M</div>
+                                <div class="metric-change positive">7.9%</div>
+                            </div>
+                            <div class="metric-value-item">
+                                <div class="metric-main">3,100.1K</div>
+                                <div class="metric-sub">2,849.8K +250.2K</div>
+                                <div class="metric-change positive">8.8%</div>
+                            </div>
+                            <div class="metric-value-item">
+                                <div class="metric-main">410.9K</div>
+                                <div class="metric-sub">376.8K -34.1K</div>
+                                <div class="metric-change positive">9.1%</div>
+                            </div>
+                        </div>
+                        <div class="chart-container">
+                            <div class="chart-legend">
+                                <div class="legend-item">
+                                    <div class="legend-line current"></div>
+                                    <span>Current Year</span>
+                                </div>
+                                <div class="legend-item">
+                                    <div class="legend-line previous"></div>
+                                    <span>Previous Year</span>
+                                </div>
+                            </div>
+                            <svg width="100%" height="90" viewBox="0 0 400 90">
+                                <polyline points="10,60 70,50 130,55 190,45 250,50 310,40 370,35" 
+                                    fill="none" stroke="#0d9488" stroke-width="2"/>
+                                <polyline points="10,70 70,68 130,72 190,65 250,68 310,60 370,58" 
+                                    fill="none" stroke="#be185d" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detail Tables -->
+                <div class="tables-row">
+                    <!-- Sales Table -->
+                    <div class="detail-table">
+                         <table class="data-table">
+                            <thead>
+                                <tr class="table-header sales-bg">
+                                    <th>Distributor</th>
+                                    <th>Value</th>
+                                    <th>vs PY</th>
+                                    <th>vs Budget</th>
+                                    <th>Growth %</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-body">
+                                <tr>
+                                    <td class="row-name"><span class="expand-icon">⊟</span> All Products</td>
+                                    <td>22.9M</td>
+                                    <td class="value-positive">13.3M</td>
+                                    <td class="value-positive">10.6M<span class="bar-indicator bar-green"></span></td>
+                                    <td class="value-positive">139%</td>
+                                </tr>
+                                <tr>
+                                    <td class="row-name"><span class="expand-icon">⊟</span> Delmond</td>
+                                    <td>22.9M</td>
+                                    <td class="value-positive">13.3M</td>
+                                    <td class="value-positive">10.6M<span class="bar-indicator bar-green"></span></td>
+                                    <td class="value-positive">139%</td>
+                                </tr>
+                                <tr>
+                                    <td class="row-name indent"><span class="expand-icon">⊟</span> General Goods</td>
+                                    <td>10.8M</td>
+                                    <td class="value-positive">9.8M</td>
+                                    <td class="value-positive">9.7M<span class="bar-indicator bar-green"></span></td>
+                                    <td class="value-positive">211%</td>
+                                </tr>
+                                <tr>
+                                    <td class="row-name indent">Biscuits</td>
+                                    <td>3.7M</td>
+                                    <td class="value-positive">2.2M</td>
+                                    <td class="value-positive">1.8M<span class="bar-indicator bar-green"></span></td>
+                                    <td class="value-positive">141%</td>
+                                </tr>
+                                <tr>
+                                    <td class="row-name indent">Rasbury</td>
+                                    <td>4.2M</td>
+                                    <td>1.2M</td>
+                                    <td>0.2M</td>
+                                    <td>42%</td>
+                                </tr>
+                                <tr>
+                                    <td class="row-name indent">Cheese</td>
+                                    <td>2.6M</td>
+                                    <td>0.6M</td>
+                                    <td>0.2M</td>
+                                    <td>32%</td>
+                                </tr>
+                                <tr>
+                                    <td class="row-name indent">Solenote</td>
+                                    <td>1.5M</td>
+                                    <td>0.2M</td>
+                                    <td class="value-negative">-0.2M<span class="bar-indicator bar-red"></span></td>
+                                    <td>13%</td>
+                                </tr>
+                                <tr>
+                                    <td class="row-name indent">Su Biscuits</td>
+                                    <td>0.8M</td>
+                                    <td class="value-negative">-0.6M</td>
+                                    <td class="value-negative">-1.1M<span class="bar-indicator bar-red"></span></td>
+                                    <td class="value-negative">-43%</td>
+                                </tr>
+                                <tr>
+                                    <td class="row-name"><span class="expand-icon">⊟</span> Retail Products</td>
+                                    <td>1.6M</td>
+                                    <td class="value-positive">0.7M</td>
+                                    <td>0.1M</td>
+                                    <td>87%</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                    </div>
+
+                    <!-- Coverage Table -->
+                    <div class="detail-table">
+        <table class="data-table">
+            <thead>
+                <tr style="background: #3b82f6">
+                    <th>Distributor</th>
+                    <th>Active Stores</th>
+                    <th>vs PY</th>
+                    <th>Productive Calls</th>
+                    <th>vs PY</th>
+                    <th>Lines Per Store</th>
+                    <th>vs PY</th>
+                    <th>MSL %</th>
+                    <th>Listing %</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="row-name"><span class="expand-icon">⊟</span> All Products</td>
+                    <td>930</td>
+                    <td class="value-negative">-146</td>
+                    <td>4,855</td>
+                    <td class="value-positive">420<span class="bar-indicator bar-green"></span></td>
+                    <td>4,855</td>
+                    <td class="value-negative">420<span class="bar-indicator bar-green"></span></td>
+                    <td>879.9K</td>
+                    <td class="value-positive">267.9K<span class="bar-indicator bar-green"></span></td>
+                </tr>
+                <tr>
+                    <td class="row-name"><span class="expand-icon">⊟</span> Delmond</td>
+                    <td>930</td>
+                    <td class="value-negative">-146</td>
+                    <td>4,855</td>
+                    <td class="value-positive">420<span class="bar-indicator bar-green"></span></td>
+                    <td>4,855</td>
+                    <td class="value-positive">420<span class="bar-indicator bar-green"></span></td>
+                    <td>4,855</td>
+                    <td class="value-positive">420<span class="bar-indicator bar-green"></span></td>
+                </tr>
+                <tr>
+                    <td class="row-name indent">Biscuits</td>
+                    <td>868</td>
+                    <td class="value-negative">-117<span class="bar-indicator bar-red"></span></td>
+                    <td>3,308</td>
+                    <td class="value-positive">230<span class="bar-indicator bar-green"></span></td>
+                    <td>4,855</td>
+                    <td class="value-positive">420<span class="bar-indicator bar-green"></span></td>
+                    <td>4,855</td>
+                    <td class="value-positive">420<span class="bar-indicator bar-green"></span></td>
+                </tr>
+                <tr>
+                    <td class="row-name indent">Rasbury</td>
+                    <td>805</td>
+                    <td class="value-negative">-217<span class="bar-indicator bar-red"></span></td>
+                    <td>2,788</td>
+                    <td class="value-negative">-404<span class="bar-indicator bar-red"></span></td>
+                    <td>4,855</td>
+                    <td class="value-positive">420<span class="bar-indicator bar-green"></span></td>
+                    <td>4,855</td>
+                    <td class="value-positive">420<span class="bar-indicator bar-green"></span></td>
+                </tr>
+                <tr>
+                    <td class="row-name indent">General Goods</td>
+                    <td>850</td>
+                    <td class="value-negative">-184<span class="bar-indicator bar-red"></span></td>
+                    <td>1,854</td>
+                    <td class="value-positive">1808<span class="bar-indicator bar-green"></span></td>
+                    <td>4,855</td>
+                    <td class="value-positive">420<span class="bar-indicator bar-green"></span></td>
+                    <td>4,855</td>
+                    <td class="value-positive">420<span class="bar-indicator bar-green"></span></td>
+                </tr>
+                <tr>
+                    <td class="row-name indent"><span class="expand-icon">⊟</span> Su Biscuits</td>
+                    <td>568</td>
+                    <td class="value-negative">-193<span class="bar-indicator bar-red"></span></td>
+                    <td>1,579</td>
+                    <td class="value-negative">-410<span class="bar-indicator bar-red"></span></td>
+                    <td>4,855</td>
+                    <td class="value-positive">420<span class="bar-indicator bar-green"></span></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="row-name indent">Solenote</td>
+                    <td>394</td>
+                    <td class="value-positive">78<span class="bar-indicator bar-blue"></span></td>
+                    <td>1,125</td>
+                    <td class="value-positive">130</td>
+                    <td>4,855</td>
+                    <td class="value-positive">420<span class="bar-indicator bar-green"></span></td>
+                    <td>4,855</td>
+                    <td class="value-positive">420<span class="bar-indicator bar-green"></span></td>
+                </tr>
+                <tr>
+                    <td class="row-name indent">Cheese</td>
+                    <td>204</td>
+                    <td class="value-positive">33<span class="bar-indicator bar-blue"></span></td>
+                    <td>901</td>
+                    <td class="value-positive">267</td>
+                    <td>4,855</td>
+                    <td class="value-positive">420<span class="bar-indicator bar-green"></span></td>
+                    <td>4,855</td>
+                    <td class="value-positive">420<span class="bar-indicator bar-green"></span></td>
+                </tr>
+                <tr>
+                    <td class="row-name"><span class="expand-icon">⊟</span> Retail Products</td>
+                    <td>612</td>
+                    <td class="value-positive">315<span class="bar-indicator bar-green"></span></td>
+                    <td>1,930</td>
+                    <td class="value-positive">918<span class="bar-indicator bar-green"></span></td>
+                    <td>4,855</td>
+                    <td class="value-positive">420<span class="bar-indicator bar-green"></span></td>
+                    <td>4,855</td>
+                    <td class="value-positive">420<span class="bar-indicator bar-green"></span></td>
+                </tr>
+                <tr>
+                    <td class="row-name indent"><span class="expand-icon">⊟</span> Consumer</td>
+                    <td>604</td>
+                    <td class="value-positive">316<span class="bar-indicator bar-green"></span></td>
+                    <td>1,678</td>
+                    <td class="value-positive">870<span class="bar-indicator bar-green"></span></td>
+                    <td>4,855</td>
+                    <td class="value-positive">420<span class="bar-indicator bar-green"></span></td>
+                    <td>4,855</td>
+                    <td class="value-positive">420<span class="bar-indicator bar-green"></span></td>
+                </tr>
+                <tr>
+                    <td class="row-name indent">MOON MASK</td>
+                    <td>604</td>
+                    <td class="value-positive">316<span class="bar-indicator bar-green"></span></td>
+                    <td>1,656</td>
+                    <td class="value-positive">844<span class="bar-indicator bar-green"></span></td>
+                    <td>4,855</td>
+                    <td class="value-positive">420<span class="bar-indicator bar-green"></span></td>
+                    <td>4,855</td>
+                    <td class="value-positive">420<span class="bar-indicator bar-green"></span></td>
+                </tr>
+                <tr>
+                    <td class="row-name indent">Grocers International</td>
+                    <td>64</td>
+                    <td class="value-positive">64<span class="bar-indicator bar-blue"></span></td>
+                    <td>127</td>
+                    <td class="value-positive">127<span class="bar-indicator bar-green"></span></td>
+                    <td>4,855</td>
+                    <td class="value-positive">420<span class="bar-indicator bar-green"></span></td>
+                    <td>4,855</td>
+                    <td class="value-positive">420<span class="bar-indicator bar-green"></span></td>
+                </tr>
+                <tr>
+                    <td class="row-name"><span class="expand-icon">⊟</span> Chickwell</td>
+                    <td>138</td>
+                    <td class="value-positive">31<span class="bar-indicator bar-red"></span></td>
+                    <td>337</td>
+                    <td class="value-positive">98<span class="bar-indicator bar-green"></span></td>
+                    <td>4,855</td>
+                    <td class="value-positive">420<span class="bar-indicator bar-green"></span></td>
+                    <td>4,855</td>
+                    <td class="value-positive">420<span class="bar-indicator bar-green"></span></td>
+                </tr>
+                <tr class="total">
+                    <td class="row-name">Total</td>
+                    <td>985</td>
+                    <td class="value-negative">-91</td>
+                    <td>6,275</td>
+                    <td class="value-positive">1115</td>
+                    <td>4,855</td>
+                    <td class="value-positive">420<span class="bar-indicator bar-green"></span></td>
+                    <td>4,855</td>
+                    <td class="value-positive">420<span class="bar-indicator bar-green"></span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+                       
+                    <!-- Stock Table -->
+                      <div class="detail-table">
+        <table class="data-table">
+            <thead>
+                <tr style="background: #14b8a6;">
+                    <th>Distributor</th>
+                    <th>Stock Value</th>
+                    <th>vs PY</th>
+                    <th>Ageing</th>
+                    <th>vs PY</th>
+                    <th>Near Expiry</th>
+                    <th>vs PY</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="row-name"><span class="expand-icon">⊟</span> All Products</td>
+                    <td>12.6M</td>
+                    <td class="value-positive">5.2M</td>
+                    <td>879.9K</td>
+                    <td class="value-positive">267.9K<span class="bar-indicator bar-green"></span></td>
+                    <td>879.9K</td>
+                    <td class="value-positive">267.9K<span class="bar-indicator bar-green"></span></td>
+                </tr>
+                <tr>
+                    <td class="row-name"><span class="expand-icon">⊟</span> Delmond</td>
+                    <td>12.6M</td>
+                    <td class="value-positive">5.2M<span class="bar-indicator bar-green"></span></td>
+                    <td>879.9K</td>
+                    <td class="value-positive">267.9K<span class="bar-indicator bar-green"></span></td>
+                    <td>879.9K</td>
+                    <td class="value-positive">267.9K<span class="bar-indicator bar-green"></span></td>
+                </tr>
+                <tr>
+                    <td class="row-name indent">Solenote</td>
+                    <td>13.8M</td>
+                    <td class="value-positive">0.5M<span class="bar-indicator bar-green"></span></td>
+                    <td>121.1K</td>
+                    <td class="value-positive">98.5K<span class="bar-indicator bar-green"></span></td>
+                    <td>879.9K</td>
+                    <td class="value-positive">267.9K<span class="bar-indicator bar-green"></span></td>
+                </tr>
+                <tr>
+                    <td class="row-name indent">Rasbury</td>
+                    <td>3.4M</td>
+                    <td class="value-positive">1.0M<span class="bar-indicator bar-red"></span></td>
+                    <td>-</td>
+                    <td class="value-positive">18.5M<span class="bar-indicator bar-green"></span></td>
+                    <td>879.9K</td>
+                    <td class="value-positive">267.9K<span class="bar-indicator bar-green"></span></td>
+                </tr>
+                <tr>
+                    <td class="row-name indent">Biscuits</td>
+                    <td>2.5M</td>
+                    <td class="value-positive">1.0M<span class="bar-indicator bar-green"></span></td>
+                    <td>178.9K</td>
+                    <td class="value-positive">17.3M<span class="bar-indicator bar-green"></span></td>
+                    <td>879.9K</td>
+                    <td class="value-positive">267.9K<span class="bar-indicator bar-green"></span></td>
+                </tr>
+                <tr>
+                    <td class="row-name indent">General</td>
+                    <td>1.6M</td>
+                    <td>0.2M</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>879.9K</td>
+                    <td class="value-positive">267.9K<span class="bar-indicator bar-green"></span></td>
+                </tr>
+                <tr>
+                    <td class="row-name indent">Goods</td>
+                    <td>0.8M</td>
+                    <td>0.1M</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>879.9K</td>
+                    <td class="value-positive">267.9K<span class="bar-indicator bar-green"></span></td>
+                </tr>
+                <tr>
+                    <td class="row-name indent">Cheese</td>
+                    <td>0.8M</td>
+                    <td>0.1M</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>879.9K</td>
+                    <td class="value-positive">267.9K<span class="bar-indicator bar-green"></span></td>
+                </tr>
+                <tr>
+                    <td class="row-name indent">Su Biscuits</td>
+                    <td>0.8M</td>
+                    <td>0.1M</td>
+                    <td>11.1K</td>
+                    <td class="value-negative">-3.7K<span class="bar-indicator bar-green"></span></td>
+                    <td>879.9K</td>
+                    <td class="value-positive">267.9K<span class="bar-indicator bar-green"></span></td>
+                </tr>
+                <tr>
+                    <td class="row-name"><span class="expand-icon">⊟</span> Retail</td>
+                    <td>3.5M</td>
+                    <td class="value-positive">1.3M</td>
+                    <td>103.2K</td>
+                    <td class="value-negative">-247.0K</td>
+                    <td>879.9K</td>
+                    <td class="value-positive">267.9K<span class="bar-indicator bar-green"></span></td>
+                </tr>
+                <tr>
+                    <td class="row-name indent">Consumer</td>
+                    <td>2.2M</td>
+                    <td class="value-positive">1.2M</td>
+                    <td>61.8K</td>
+                    <td class="value-positive">15.7K</td>
+                    <td>879.9K</td>
+                    <td class="value-positive">267.9K<span class="bar-indicator bar-green"></span></td>
+                </tr>
+                <tr>
+                    <td class="row-name indent">Chickwell</td>
+                    <td>1.3M</td>
+                    <td>0.1M</td>
+                    <td>41.4K</td>
+                    <td class="value-negative">-262.7K</td>
+                    <td>879.9K</td>
+                    <td class="value-positive">267.9K<span class="bar-indicator bar-green"></span></td>
+                </tr>
+                <tr class="total">
+                    <td class="row-name">Total</td>
+                    <td>16.1M</td>
+                    <td class="value-positive">1.2M</td>
+                    <td>3,100.1K</td>
+                    <td class="value-positive">250.2K</td>
+                    <td>879.9K</td>
+                    <td class="value-positive">267.9K<span class="bar-indicator bar-green"></span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
